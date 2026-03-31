@@ -1,0 +1,18 @@
+papers: 
+- title: "Implicit 4D Gaussian Splatting for Fast Motion with Large Inter-Frame Displacements" 
+  authors: "<b>Seung-gyeom Kim</b>, Areum Kim, Yongjae Yoo, Sukmin Yun" 
+  venue: "International Conference on Learning Representations (ICLR), 2026" 
+  paper_pdf: "https://openreview.net/forum?id=MWtXs60n38&referrer" 
+  selected: y
+
+- title: "Automatic Accessible Multimodal Translation of Graphics Using a Refreshable Pin Array" 
+  authors: "<b>Seung-gyeom Kim</b>, Areum Kim, Eunchae Kim, Minho Chung, Yongjae Yoo" 
+  venue: "ACM International Conference on Multimedia (MM) 2025" 
+  paper_pdf: "https://dl.acm.org/doi/10.1145/3746027.3754586" 
+  selected: y
+
+- title: "To Guide or to Disturb - How to Teach Dexterous Skills Using AI?" 
+  authors: "Jiyoung Park, Dohoon Kwak, Jaewan Lim, Taeyoon Lee, <b>Seung-gyeom Kim</b>, Yongjae Yoo" 
+  venue: "ACM Conference on Intelligent User Interfaces (IUI) 2025" 
+  paper_pdf: "https://dl.acm.org/doi/full/10.1145/3708359.3712097" 
+  selected: y

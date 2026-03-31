@@ -1,0 +1,135 @@
+---
+layout: default
+title: Home
+---
+<!-- ========== BIO ========== -->
+<div class="docs-section" id="bio">
+  <h4>Bio</h4>
+  <p>
+  I am a Ph.D. student advised by <a href="https://sites.google.com/view/sukmin-yun" target="_blank">Prof. Sukmin Yun</a> at the Vision AI Lab (VAIL), Hanyang University. Previously, I worked with <a href="https://dreamseed87.wixsite.com/yyoo" target="_blank">Prof. Yongjae Yoo</a> on human-computer interaction (HCI) research.
+  My research focuses on <b>spatial and spatiotemporal modeling (e.g., world models, 3D/4D representation learning)</b>, aiming to represent and reason about dynamic signals across space and time.
+  I am also interested in <b>low-bit training (e.g., STE-based optimization, BitNet-based quantization)</b> and lightweight methods for resource-efficient on-device adaptation and continual updates in changing physical environments.
+  More broadly, I am motivated to develop <b>human-centered AI systems with social impact</b>, including assistive applications that benefit underserved users.
+  </p>
+</div>
+
+<!-- ========== PUBLICATIONS ========== -->
+<div class="docs-section" id="publications">
+  <h4>Publications</h4>
+
+  <p>Most recent publications on <a href="{{ site.data.main_info.google_scholar }}" target="_blank">Google Scholar</a>.<br/>
+  <sup>‡</sup> indicates equal contribution.
+  </p>
+
+  <ul class="tab-nav">
+    <li><div class="button active" data-ref="#papers-selected">Selected</div></li>
+    <li><div class="button" data-ref="#papers-all">All</div></li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="papers-selected">
+      {% assign selected_papers = site.data.publications.papers | where: "selected", "y" %}
+      {% for paper in selected_papers %}
+        <div class="paper">
+          <p class="title"><b>{{ paper.title }}</b></p>
+          <p>{{ paper.authors }}</p>
+          <p class="venue"><i>{{ paper.venue }}</i></p>
+           <div class="paper-buttons">
+            {% if paper.paper_pdf %}
+              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
+            {% endif %}
+
+            {% if paper.slides %}
+              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+            {% endif %}
+
+            {% if paper.poster %}
+              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+            {% endif %}
+
+            {% if paper.video %}
+              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+            {% endif %}
+
+            {% if paper.code %}
+              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+            {% endif %}
+
+            {% if paper.data %}
+              <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
+            {% endif %}
+
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="tab-pane" id="papers-all">
+      {% for paper in site.data.publications.papers %}
+        <div class="paper">
+          <p class="title"><b>{{ paper.title }}</b></p>
+          <p>{{ paper.authors }}</p>
+          <p class="venue"><i>{{ paper.venue }}</i></p>
+           <div class="paper-buttons">
+            {% if paper.paper_pdf %}
+              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
+            {% endif %}
+
+            {% if paper.slides %}
+              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+            {% endif %}
+
+            {% if paper.poster %}
+              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+            {% endif %}
+
+            {% if paper.video %}
+              <a class="button" href="{{ paper.video }}" target="_blank">Video</a>
+            {% endif %}
+
+            {% if paper.code %}
+              <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
+            {% endif %}
+
+            {% if paper.data %}
+              <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
+            {% endif %}
+
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<!-- ========== HONORS & AWARDS ========== -->
+<div class="docs-section" id="honors">
+  <h4>Honors & Awards</h4>
+
+  <div class="honors-list">
+    {% for honor in site.data.honors.honors %}
+    <div class="list-row">
+      <div class="list-left">
+        <p><b>{{ honor.title }}</b></p>
+        <p class="org">{{ honor.place }}</p>
+      </div>
+      <p class="list-right">{{ honor.year }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<div class="docs-section" id="experience">
+  <h4>Experience</h4>
+  <div class="experience-list">
+    {% for exp in site.data.experience.experiences %}
+    <div class="list-row">
+      <div class="list-left">
+        <p><b>{{ exp.title }}</b></p>
+        <p class="org">{{ exp.place }}</p>
+      </div>
+      <p class="list-right">{{ exp.time }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>
