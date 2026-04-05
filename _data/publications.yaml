@@ -3,6 +3,7 @@ papers:
   authors: "<b>Seung-gyeom Kim</b>, Areum Kim, Yongjae Yoo, Sukmin Yun" 
   venue: "International Conference on Learning Representations (ICLR), 2026" 
   paper_pdf: "https://openreview.net/forum?id=MWtXs60n38&referrer" 
+  project_page: "https://seung-gyeom.github.io/SPIN-4DGS"
   selected: y
 
 - title: "Automatic Accessible Multimodal Translation of Graphics Using a Refreshable Pin Array" 

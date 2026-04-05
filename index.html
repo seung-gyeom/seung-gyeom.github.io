@@ -39,6 +39,10 @@ title: Home
               <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
             {% endif %}
 
+            {% if paper.project_page %}
+              <a class="button" href="{{ paper.project_page | prepend: site.baseurl }}" target="_blank">Project</a>
+            {% endif %}
+
             {% if paper.slides %}
               <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
             {% endif %}
@@ -73,6 +77,10 @@ title: Home
            <div class="paper-buttons">
             {% if paper.paper_pdf %}
               <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
+            {% endif %}
+
+            {% if paper.project_page %}
+              <a class="button" href="{{ paper.project_page | prepend: site.baseurl }}" target="_blank">Project</a>
             {% endif %}
 
             {% if paper.slides %}
