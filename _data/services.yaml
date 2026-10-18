@@ -1,0 +1,2 @@
+services:
+  - { role: "Conference Reviewer", venues: "NeurIPS'26", note: "Top Reviewer" }

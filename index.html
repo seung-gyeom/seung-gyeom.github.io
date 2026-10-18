@@ -8,7 +8,7 @@ title: Home
   <p>
   I am a Ph.D. student advised by <a href="https://sites.google.com/view/sukmin-yun" target="_blank">Prof. Sukmin Yun</a> at the Vision AI Lab (VAIL), Hanyang University. Previously, I worked with <a href="https://dreamseed87.wixsite.com/yyoo" target="_blank">Prof. Yongjae Yoo</a> on human-computer interaction (HCI) research.
   My research focuses on <b>spatial and spatiotemporal modeling (e.g., world models, 3D/4D representation learning)</b>, aiming to represent and reason about dynamic signals across space and time.
-  I am also interested in <b>low-bit training (e.g., STE-based optimization, BitNet-based quantization)</b> and lightweight methods for resource-efficient on-device adaptation and continual updates in changing physical environments.
+  I am also interested in <b>low-bit training (e.g., STE-based optimization)</b> and lightweight methods for resource-efficient on-device adaptation and continual updates in changing physical environments.
   More broadly, I am motivated to develop <b>human-centered AI systems with social impact</b>, including assistive applications that benefit underserved users.
   </p>
 </div>
@@ -138,6 +138,16 @@ title: Home
       </div>
       <p class="list-right">{{ exp.time }}</p>
     </div>
+    {% endfor %}
+  </div>
+</div>
+
+<!-- ========== ACADEMIC SERVICES ========== -->
+<div class="docs-section" id="services">
+  <h4>Academic Services</h4>
+  <div class="services-list">
+    {% for service in site.data.services.services %}
+    <p class="service-row"><b>{{ service.role }}</b>, {{ service.venues }}{% if service.note %} <span class="service-note">{{ service.note }}</span>{% endif %}</p>
     {% endfor %}
   </div>
 </div>
